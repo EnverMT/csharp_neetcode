@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Stack._20_Valid_parentheses;
+﻿namespace Leetcode.Roadmap.Stack._20_Valid_parentheses;
 
 public class Solution
 {
@@ -12,7 +12,7 @@ public class Solution
 
     public bool IsValid(string s)
     {
-        foreach (Char ch in s)
+        foreach (char ch in s)
         {
             if (validTags.ContainsKey(ch.ToString()))
             {

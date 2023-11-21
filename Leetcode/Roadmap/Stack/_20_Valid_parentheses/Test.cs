@@ -1,6 +1,6 @@
 ﻿using Leetcode.Interface;
 
-namespace Leetcode.Stack._20_Valid_parentheses;
+namespace Leetcode.Roadmap.Stack._20_Valid_parentheses;
 
 internal class Test : ITest
 {
