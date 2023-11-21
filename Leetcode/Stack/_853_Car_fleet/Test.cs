@@ -1,6 +1,8 @@
-﻿namespace Leetcode.Stack._853_Car_fleet;
+﻿using Leetcode.Interface;
 
-public class Test : Solution
+namespace Leetcode.Stack._853_Car_fleet;
+
+public class Test : Solution, ITest
 {
     private int target;
     private int[] position = [];
