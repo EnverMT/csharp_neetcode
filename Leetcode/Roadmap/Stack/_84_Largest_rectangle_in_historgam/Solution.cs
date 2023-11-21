@@ -5,18 +5,22 @@ public class Solution
     private int maxArea = 0;
     public int LargestRectangleArea(int[] heights)
     {
-        Histogram? h;
         for (int i = 0; i < heights.Length; i++)
         {
-            h = null;
+            int start = i;
             while (stack.Count > 0 && stack.Peek().height >= heights[i])
             {
-                int area = heights[i] * (i - stack.Peek().index + 1);
-                if (maxArea < area) maxArea = area;
-                h = stack.Pop();
+                Histogram his = stack.Pop();
+                maxArea = Math.Max(maxArea, his.height * (i - his.index));                
+                start = his.index;
             }
+            
+            stack.Push(new Histogram(start, heights[i]));
+        }
 
-            stack.Push(new Histogram(h?.index ?? i, heights[i]));
+        foreach (Histogram h in stack)
+        {
+            maxArea = Math.Max(maxArea, h.height * (heights.Length - h.index));
         }
 
         return maxArea;
