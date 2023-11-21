@@ -2,7 +2,7 @@
 
 namespace Leetcode.Stack._20_Valid_parentheses;
 
-internal class Test:ITest
+internal class Test : ITest
 {
     public void TestCases()
     {
