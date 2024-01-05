@@ -32,6 +32,10 @@ public class Solution
                 {
                     res.Add(new List<int>() { sortedNums[indexA], sortedNums[indexL], sortedNums[indexR] });
                     indexL++;
+                    while (indexL < indexR && sortedNums[indexL] == sortedNums[indexL - 1])
+                    {
+                        indexL++;
+                    }
                 }
             }
             indexA++;
