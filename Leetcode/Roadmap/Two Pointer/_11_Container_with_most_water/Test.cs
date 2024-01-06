@@ -1,6 +1,6 @@
 ﻿using Leetcode.Interface;
 
-namespace Leetcode.Roadmap.Two_Pointer.__11_Container_with_most_water;
+namespace Leetcode.Roadmap.Two_Pointer._11_Container_with_most_water;
 
 internal class Test : Solution, ITest
 {
