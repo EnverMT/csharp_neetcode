@@ -22,7 +22,7 @@ internal class Test : Solution, ITest
         Console.WriteLine($"input = [{string.Join(",", heights)}]");
         Console.WriteLine($"result          = {result}");
         Console.WriteLine($"expected result = {expectedResult}");
-        Console.WriteLine($"is correct: {expectedResult==result} {Environment.NewLine}");
+        Console.WriteLine($"is correct: {expectedResult == result} {Environment.NewLine}");
 
         this.caseNumber++;
         return expectedResult == result;
