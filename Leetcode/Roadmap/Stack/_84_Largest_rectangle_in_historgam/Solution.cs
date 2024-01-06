@@ -11,10 +11,10 @@ public class Solution
             while (stack.Count > 0 && stack.Peek().height >= heights[i])
             {
                 Histogram his = stack.Pop();
-                maxArea = Math.Max(maxArea, his.height * (i - his.index));                
+                maxArea = Math.Max(maxArea, his.height * (i - his.index));
                 start = his.index;
             }
-            
+
             stack.Push(new Histogram(start, heights[i]));
         }
 
