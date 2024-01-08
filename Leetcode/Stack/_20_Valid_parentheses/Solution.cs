@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Roadmap.Stack._20_Valid_parentheses;
+﻿namespace Leetcode.Stack._20_Valid_parentheses;
 
 public class Solution
 {

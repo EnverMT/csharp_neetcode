@@ -1,13 +1,10 @@
-﻿using Leetcode.Interface;
-using Leetcode.Roadmap.Binary_Search._704_Binary_search;
+﻿namespace Leetcode;
 
-namespace Leetcode;
-
-internal class Program
+public class Program
 {
     static void Main(string[] args)
     {
-        ITest solution = new Test();
-        solution.TestCases();
+
     }
+
 }

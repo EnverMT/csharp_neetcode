@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Roadmap.Stack._84_Largest_rectangle_in_historgam;
+﻿namespace Leetcode.Stack._84_Largest_rectangle_in_historgam;
 public class Solution
 {
     private Stack<Histogram> stack = new();

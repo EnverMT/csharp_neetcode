@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Roadmap\Array\" />
+    <Folder Include="Roadmap\" />
   </ItemGroup>
 
 </Project>

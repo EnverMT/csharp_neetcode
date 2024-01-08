@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Roadmap.Binary_Search._704_Binary_search;
+﻿namespace Leetcode.Binary_Search._704_Binary_search;
 
 public class Solution
 {

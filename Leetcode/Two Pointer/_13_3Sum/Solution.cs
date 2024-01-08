@@ -1,5 +1,5 @@
 ﻿// https://leetcode.com/problems/3sum/
-namespace Leetcode.Roadmap.Two_Pointer._13_3Sum;
+namespace Leetcode.Two_Pointer._13_3Sum;
 
 public class Solution
 {
