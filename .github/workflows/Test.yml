@@ -1,11 +1,20 @@
 name: Tests
 
-on: push
+on: [push]
 
 jobs:
-  tests:
-    name: Unit Testing
-    runs-on: windows-latest
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: [ '8.0.x' ]
+
     steps:
-      - uses: actions/checkout@v2.1.0
-      - run: dotnet test
+      - uses: actions/checkout@v4
+      - name: Setup dotnet ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Run tests
+        run: dotnet test
