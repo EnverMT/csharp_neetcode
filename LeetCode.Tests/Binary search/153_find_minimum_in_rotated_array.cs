@@ -37,7 +37,7 @@ public class _153_find_minimum_in_rotated_array
     [Fact]
     public void BinarySearch_MinInRotatedArray_4()
     {
-        int result = solution.FindMin([2,1]);
+        int result = solution.FindMin([2, 1]);
 
         Assert.Equal(1, result);
     }

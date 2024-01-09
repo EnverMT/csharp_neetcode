@@ -13,7 +13,8 @@ public class Solution
             if (nums[indexM] > nums[indexR])
             {
                 indexL = indexM + 1;
-            } else
+            }
+            else
             {
                 indexR = indexM;
             }
