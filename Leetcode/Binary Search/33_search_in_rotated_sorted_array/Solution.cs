@@ -24,10 +24,11 @@ public class Solution
             }
             else
             { // right half sorted
-                if (nums[m]<=target && target <= nums[r])
+                if (nums[m] <= target && target <= nums[r])
                 {
                     l = m + 1;
-                } else
+                }
+                else
                 {
                     r = m - 1;
                 }
