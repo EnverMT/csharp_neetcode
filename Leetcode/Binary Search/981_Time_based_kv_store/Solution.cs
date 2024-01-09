@@ -17,7 +17,7 @@ public class TimeMap
         else
         {
             this.timeMap[key] = new() {
-                { timestamp, value } 
+                { timestamp, value }
             };
         }
     }
