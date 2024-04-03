@@ -1,8 +1,8 @@
 ﻿namespace Leetcode.Linked_List._21_Merge_two_sorter_lists;
 public class Solution
 {
-    private ListNode? head = new();
-    public ListNode MergeTwoLists(ListNode list1, ListNode list2)
+    private readonly ListNode head = new();
+    public ListNode? MergeTwoLists(ListNode? list1, ListNode? list2)
     {
         ListNode? tail = this.head;
 
