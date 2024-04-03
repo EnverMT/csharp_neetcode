@@ -1,4 +1,4 @@
-﻿namespace Leetcode.Linked_List._206_Reverse_linked_list;
+﻿namespace Leetcode.Linked_List;
 
 
 public class ListNode(int val = 0, ListNode? next = null)

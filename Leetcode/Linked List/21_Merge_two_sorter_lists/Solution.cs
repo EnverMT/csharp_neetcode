@@ -1,6 +1,4 @@
-﻿using Leetcode.Linked_List._206_Reverse_linked_list;
-
-namespace Leetcode.Linked_List._21_Merge_two_sorter_lists;
+﻿namespace Leetcode.Linked_List._21_Merge_two_sorter_lists;
 public class Solution
 {
     private ListNode? head = new();
