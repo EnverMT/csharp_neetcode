@@ -25,5 +25,5 @@ public class _206_Reverse_linked_list
         }
 
         this._solution.ReverseList(headNode);
-    }    
+    }
 }

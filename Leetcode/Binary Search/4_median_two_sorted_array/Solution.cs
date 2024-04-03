@@ -5,7 +5,7 @@ public class Solution
     public double FindMedianSortedArrays(int[] nums1, int[] nums2)
     {
         if (nums1.Length > nums2.Length) return this.FindMedianSortedArrays(nums2, nums1);
-        
+
         int totalLength = nums1.Length + nums2.Length;
         int indexL = 0;
         int indexR = nums1.Length - 1;
