@@ -2,11 +2,13 @@
 
 public class Solution
 {
-    public static ListNode ReverseList(ListNode head)
+    private ListNode? previous;
+    private ListNode? current;
+    private ListNode? next;
+
+    public ListNode ReverseList(ListNode head)
     {
-        ListNode? previous = null;
-        ListNode? current = head;
-        ListNode? next;
+        this.current = head;
 
         while (current != null)
         {
