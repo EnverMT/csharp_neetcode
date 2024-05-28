@@ -1,9 +1,15 @@
 ﻿namespace Leetcode.Linked_List;
 
 
-public class ListNode(int val = 0, ListNode? next = null)
+public class ListNode
 {
-    public int val = val;
-    public ListNode? next = next;
+    public int val;
+    public ListNode? next;
+
+    public ListNode(int val = 0, ListNode? next = null)
+    {
+        this.val = val;
+        this.next = next;
+    }
 }
 
