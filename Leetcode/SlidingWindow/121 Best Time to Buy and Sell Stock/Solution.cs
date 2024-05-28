@@ -21,7 +21,7 @@ public class Solution
 
             indexR++;
         }
-
+        GC.Collect();
         return maxProfit;
     }
 }
