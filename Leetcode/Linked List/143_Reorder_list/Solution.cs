@@ -26,7 +26,7 @@ public class Solution
         while (head != null)
         {
             tmp = head;
-            head = head.next;
+            head = head.next!;
             head.next = tmp;
         }
 

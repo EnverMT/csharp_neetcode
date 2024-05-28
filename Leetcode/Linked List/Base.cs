@@ -26,7 +26,7 @@ public class Base
         while (head != null)
         {
             list.Add(head.val);
-            head = head.next;
+            head = head.next!;
         }
         return list.ToArray();
     }
