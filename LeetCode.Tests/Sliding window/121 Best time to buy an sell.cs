@@ -1,5 +1,4 @@
 ﻿using Leetcode.SlidingWindow._121_Best_Time_to_Buy_and_Sell_Stock;
-using System.Diagnostics;
 
 namespace Leetcode.Tests.Sliding_window;
 
@@ -36,7 +35,7 @@ public class _121_Best_time_to_buy_an_sell
     {
         int[] prices = [7, 1, 5, 3, 6, 4];
         int result = 5;
-        
+
         Assert.Equal(result, solution.MaxProfit(prices));
     }
 
