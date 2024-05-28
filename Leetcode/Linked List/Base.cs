@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-
-namespace Leetcode.Linked_List;
+﻿namespace Leetcode.Linked_List;
 
 public class Base
 {
@@ -24,7 +22,7 @@ public class Base
 
     public int[] GetArrayFromList(ListNode head)
     {
-        List<int> list = new();        
+        List<int> list = new();
         while (head != null)
         {
             list.Add(head.val);
@@ -34,7 +32,7 @@ public class Base
     }
 
     public string ArrayToString(int[] array)
-    {        
+    {
         return $"[{string.Join(",", array)}]";
     }
 }
