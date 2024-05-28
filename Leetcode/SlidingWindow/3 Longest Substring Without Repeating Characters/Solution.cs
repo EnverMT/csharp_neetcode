@@ -21,6 +21,8 @@ public class Solution
                 maxLength = queue.Count;
         }
 
+        GC.Collect();
+
         return maxLength;
     }
 }
