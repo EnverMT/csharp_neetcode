@@ -2,7 +2,7 @@
 
 public class Solution
 {
-    public TreeNode InvertTree(TreeNode root)
+    public TreeNode? InvertTree(TreeNode? root)
     {
         if (root == null)
             return root;
@@ -12,10 +12,10 @@ public class Solution
 
         while (queue.Count > 0)
         {
-            TreeNode current = queue.Dequeue();
+            TreeNode? current = queue.Dequeue();
 
             // Swap the left and right children
-            TreeNode temp = current.left;
+            TreeNode? temp = current.left;
             current.left = current.right;
             current.right = temp;
 

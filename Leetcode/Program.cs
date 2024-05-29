@@ -10,7 +10,7 @@ public class Program
 
         int[] array = [];
         TreeNode? root = tree.ConvertArrayToTree(array);
-        int[] arr = tree.ConvertTreeToArray(root);
+        int[] arr = tree.ConvertTreeToArray(root!);
         //tree.PrintLevelOrder(arr);  // Output: 1 2 3 4 5 6 7
 
         for (int i = 0; i < arr.Length; i++)

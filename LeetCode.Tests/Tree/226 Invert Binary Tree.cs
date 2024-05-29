@@ -17,7 +17,7 @@ public class _226_Invert_Binary_Tree
         int[] output = [1, 3, 2];
 
         TreeNode? rootTreeNode = _base.ConvertArrayToTree(root);
-        TreeNode outputTreeNode = _solution.InvertTree(rootTreeNode);
+        TreeNode? outputTreeNode = _solution.InvertTree(rootTreeNode);
 
         int[] outputArray = _base.ConvertTreeToArray(outputTreeNode);
 
@@ -31,7 +31,7 @@ public class _226_Invert_Binary_Tree
         int[] output = [4, 7, 2, 9, 6, 3, 1];
 
         TreeNode? rootTreeNode = _base.ConvertArrayToTree(root);
-        TreeNode outputTreeNode = _solution.InvertTree(rootTreeNode);
+        TreeNode? outputTreeNode = _solution.InvertTree(rootTreeNode);
 
         int[] outputArray = _base.ConvertTreeToArray(outputTreeNode);
 
@@ -45,7 +45,7 @@ public class _226_Invert_Binary_Tree
         int[] output = [];
 
         TreeNode? rootTreeNode = _base.ConvertArrayToTree(root);
-        TreeNode outputTreeNode = _solution.InvertTree(rootTreeNode);
+        TreeNode? outputTreeNode = _solution.InvertTree(rootTreeNode);
 
         int[] outputArray = _base.ConvertTreeToArray(outputTreeNode);
 
@@ -59,7 +59,7 @@ public class _226_Invert_Binary_Tree
         int[] output = [1, 3, 2, 7, 6, 5, 4];
 
         TreeNode? rootTreeNode = _base.ConvertArrayToTree(root);
-        TreeNode outputTreeNode = _solution.InvertTree(rootTreeNode);
+        TreeNode? outputTreeNode = _solution.InvertTree(rootTreeNode);
 
         int[] outputArray = _base.ConvertTreeToArray(outputTreeNode);
 

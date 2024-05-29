@@ -34,7 +34,7 @@ public class Base
         return root;
     }
 
-    public int[] ConvertTreeToArray(TreeNode root)
+    public int[] ConvertTreeToArray(TreeNode? root)
     {
         if (root == null)
             return [];
