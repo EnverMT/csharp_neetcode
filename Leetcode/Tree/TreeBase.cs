@@ -1,6 +1,6 @@
 ﻿namespace Leetcode.Tree;
 
-public class Base
+public class TreeBase
 {
     public static TreeNode? ConvertArrayToTree(int?[] array)
     {

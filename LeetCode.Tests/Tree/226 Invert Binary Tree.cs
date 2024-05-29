@@ -13,10 +13,10 @@ public class _226_Invert_Binary_Tree
         int?[] root = [1, 2, 3];
         int?[] output = [1, 3, 2];
 
-        TreeNode? rootTreeNode = Base.ConvertArrayToTree(root);
+        TreeNode? rootTreeNode = TreeBase.ConvertArrayToTree(root);
         TreeNode? outputTreeNode = _solution.InvertTree(rootTreeNode);
 
-        int?[] outputArray = Base.ConvertTreeToArray(outputTreeNode);
+        int?[] outputArray = TreeBase.ConvertTreeToArray(outputTreeNode);
 
         Assert.Equal(output, outputArray);
     }
@@ -27,10 +27,10 @@ public class _226_Invert_Binary_Tree
         int?[] root = [4, 2, 7, 1, 3, 6, 9];
         int?[] output = [4, 7, 2, 9, 6, 3, 1];
 
-        TreeNode? rootTreeNode = Base.ConvertArrayToTree(root);
+        TreeNode? rootTreeNode = TreeBase.ConvertArrayToTree(root);
         TreeNode? outputTreeNode = _solution.InvertTree(rootTreeNode);
 
-        int?[] outputArray = Base.ConvertTreeToArray(outputTreeNode);
+        int?[] outputArray = TreeBase.ConvertTreeToArray(outputTreeNode);
 
         Assert.Equal(output, outputArray);
     }
@@ -41,10 +41,10 @@ public class _226_Invert_Binary_Tree
         int?[] root = [];
         int?[] output = [];
 
-        TreeNode? rootTreeNode = Base.ConvertArrayToTree(root);
+        TreeNode? rootTreeNode = TreeBase.ConvertArrayToTree(root);
         TreeNode? outputTreeNode = _solution.InvertTree(rootTreeNode);
 
-        int?[] outputArray = Base.ConvertTreeToArray(outputTreeNode);
+        int?[] outputArray = TreeBase.ConvertTreeToArray(outputTreeNode);
 
         Assert.Equal(output, outputArray);
     }
@@ -55,10 +55,10 @@ public class _226_Invert_Binary_Tree
         int?[] root = [1, 2, 3, 4, 5, 6, 7];
         int?[] output = [1, 3, 2, 7, 6, 5, 4];
 
-        TreeNode? rootTreeNode = Base.ConvertArrayToTree(root);
+        TreeNode? rootTreeNode = TreeBase.ConvertArrayToTree(root);
         TreeNode? outputTreeNode = _solution.InvertTree(rootTreeNode);
 
-        int?[] outputArray = Base.ConvertTreeToArray(outputTreeNode);
+        int?[] outputArray = TreeBase.ConvertTreeToArray(outputTreeNode);
 
         Assert.Equal(output, outputArray);
     }
