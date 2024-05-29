@@ -5,7 +5,7 @@ namespace Leetcode.Tests.Tree;
 
 public class _104_Maximum_Depth_of_Binary_Tree
 {
-    private readonly Solution _solution = new();    
+    private readonly Solution _solution = new();
 
     [Fact]
     public void _104_Maximum_Depth_of_Binary_Tree_Test_1()
