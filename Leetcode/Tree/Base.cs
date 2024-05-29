@@ -34,6 +34,30 @@ public class Base
         return root;
     }
 
+    public int[] ConvertTreeToArray(TreeNode root)
+    {
+        if (root == null)
+            return new int[0];
+
+        List<int> result = new List<int>();
+        Queue<TreeNode> queue = new Queue<TreeNode>();
+        queue.Enqueue(root);
+
+        while (queue.Count > 0)
+        {
+            TreeNode current = queue.Dequeue();
+            result.Add(current.val);
+
+            if (current.left != null)
+                queue.Enqueue(current.left);
+
+            if (current.right != null)
+                queue.Enqueue(current.right);
+        }
+
+        return result.ToArray();
+    }
+
     // Method to print the tree in level order for verification
     public void PrintLevelOrder(TreeNode? root)
     {
