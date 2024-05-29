@@ -7,7 +7,7 @@ public class Base
         if (array.Length == 0)
             return null;
 
-        TreeNode root = new(array[0]);
+        TreeNode? root = new(array[0]);
         Queue<TreeNode> queue = new();
         queue.Enqueue(root);
 
@@ -19,14 +19,17 @@ public class Base
             if (i < array.Length)
             {
                 current.left = new TreeNode(array[i]);
-                queue.Enqueue(current.left);
+                if (current.left.val != null)
+                    queue.Enqueue(current.left);
                 i++;
             }
 
             if (i < array.Length)
             {
                 current.right = new TreeNode(array[i]);
-                queue.Enqueue(current.right);
+
+                if (current.right.val != null)
+                    queue.Enqueue(current.right);
                 i++;
             }
         }
@@ -55,7 +58,7 @@ public class Base
                 queue.Enqueue(current.right);
         }
 
-        return result.ToArray();
+        return [.. result];
     }
 
     // Method to print the tree in level order for verification
