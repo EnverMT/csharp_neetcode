@@ -4,7 +4,7 @@ public class Solution
 {
     public TreeNode InvertTree(TreeNode root)
     {
-        if (root.left == null && root.right == null)
+        if (root == null)
             return root;
 
         Queue<TreeNode> queue = new Queue<TreeNode>();
