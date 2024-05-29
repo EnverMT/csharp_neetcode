@@ -1,4 +1,4 @@
-﻿using Leetcode.Linked_List;
+﻿using Leetcode.Tree;
 
 namespace Leetcode;
 
@@ -6,12 +6,10 @@ public class Program
 {
     static void Main()
     {
+        Base tree = new ();
 
-        Base _base = new();
-        ListNode node = _base.GetListNodesFromArray([1, 2, 3, 4, 5]);
-
-        int[] ints = _base.GetArrayFromList(node);
-
-        Console.WriteLine(_base.ArrayToString(ints));
+        int[] array = { 1, 2, 3, 4, 5, 6, 7 };
+        TreeNode? root = tree.ConvertArrayToTree(array);
+        tree.PrintLevelOrder(root);  // Output: 1 2 3 4 5 6 7
     }
 }
