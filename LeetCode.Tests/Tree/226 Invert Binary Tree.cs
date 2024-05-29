@@ -5,7 +5,7 @@ namespace Leetcode.Tests.Tree;
 
 public class _226_Invert_Binary_Tree
 {
-    private Solution _solution = new();
+    private readonly Solution _solution = new();
 
     [Fact]
     public void _226_Invert_Binary_Tree_Test_1()
