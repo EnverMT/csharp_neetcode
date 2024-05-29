@@ -47,8 +47,12 @@ public class Base
         {
             TreeNode current = queue.Dequeue();
             result.Add(current.val);
-            queue.Enqueue(current.left!);
-            queue.Enqueue(current.right!);
+
+            if (current.left != null)
+                queue.Enqueue(current.left);
+
+            if (current.right != null)
+                queue.Enqueue(current.right);
         }
 
         return result.ToArray();
