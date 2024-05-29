@@ -1,9 +1,7 @@
 ﻿using Leetcode.Tree;
 using Leetcode.Tree._226_Invert_Binary_Tree;
 
-
 namespace Leetcode.Tests.Tree;
-
 
 public class _226_Invert_Binary_Tree
 {
