@@ -4,7 +4,7 @@ public class Base
 {
     public TreeNode? ConvertArrayToTree(int[] array)
     {
-        if (array == null || array.Length == 0)
+        if (array.Length == 0)
             return null;
 
         TreeNode root = new TreeNode(array[0]);
@@ -37,7 +37,7 @@ public class Base
     public int[] ConvertTreeToArray(TreeNode root)
     {
         if (root == null)
-            return new int[0];
+            return [];
 
         List<int> result = new List<int>();
         Queue<TreeNode> queue = new Queue<TreeNode>();
