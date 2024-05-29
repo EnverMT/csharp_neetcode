@@ -12,6 +12,6 @@ public class Solution
 
         GC.Collect();
 
-        return root;        
+        return root;
     }
 }
