@@ -22,7 +22,7 @@ public class Solution
             if (indexR - indexL + 1 > s1.Length)
             {
                 _dict2[s2[indexL]] -= 1;
-                
+
                 if (_dict2[s2[indexL]] == 0)
                     _dict2.Remove(s2[indexL]);
 
