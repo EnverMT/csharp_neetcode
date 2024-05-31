@@ -8,8 +8,10 @@ public class Solution
 
     public bool CheckInclusion(string s1, string s2)
     {
+        bool result = false;
+
         if (s1.Length > s2.Length)
-            return false;
+            return result;
 
         _dict1 = s1.GroupBy(c => c).ToDictionary(c => c.Key, c => c.Count());
 
@@ -30,10 +32,15 @@ public class Solution
             }
 
             if (IsEqual(_dict1, _dict2))
-                return true;
+            {
+                result = true;
+                break;
+            }
         }
 
-        return false;
+        GC.Collect();
+
+        return result;
     }
 
     private bool IsEqual(Dictionary<char, int> dict1, Dictionary<char, int> dict2)
