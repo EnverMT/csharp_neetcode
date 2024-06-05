@@ -4,7 +4,6 @@ public class Solution
 {
     private Dictionary<char, int>? _dict1;
     private readonly Dictionary<char, int> _dict2 = new();
-    private int _matches = 0;
 
     public bool CheckInclusion(string s1, string s2)
     {
