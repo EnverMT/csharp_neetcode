@@ -6,7 +6,7 @@ public class Node
     public Node? next = null;
     public Node? random = null;
 
-    public int index = 0;
+    public int? index = 0;
 
     public Node(int value)
     {
@@ -43,16 +43,25 @@ public class Node
         return head;
     }
 
-    public static int[][] ToArray(Node? head)
+    public static int?[][] ToArray(Node? head)
     {
-        List<int[]> list = [];
+        List<int?[]> list = [];
 
         while (head != null)
         {
-            list.Add([head.val, head.index]);
+            list.Add([head.val, head.random?.index]);
             head = head.next;
         }
 
         return list.ToArray();
+    }
+
+    public override string ToString()
+    {
+        string index = "null";
+        if (this.random != null)
+            index = $"{this.random.index}";
+
+        return $"[{this.val},{index}]";
     }
 }
