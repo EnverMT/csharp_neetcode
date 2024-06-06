@@ -25,19 +25,16 @@ public class Node
         {
             current.next = new Node((int)array[i][0]!);
             current = current.next;
-            current.index = i;
             nodes.Add(current);
         }
 
-        int? index;
+        for (Node? c = head; c != null; c = c.next)
+            c.index = nodes.IndexOf(c);
 
         for (int i = 0; i < array.Length; i++)
         {
-            index = array[i][1];
-            if (index != null)
-            {
-                nodes.ElementAt(i).random = nodes.ElementAt((int)index);
-            }
+            if (array[i][1] != null)
+                nodes[i].random = nodes.ElementAt((int)array[i][1]!);
         }
 
         return head;

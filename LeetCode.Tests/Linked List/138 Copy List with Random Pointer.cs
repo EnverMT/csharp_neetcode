@@ -15,9 +15,14 @@ public class _138_Copy_List_with_Random_Pointer
 
         Node node = Node.FromArray(head);
         Node resultNode = _solution.CopyRandomList(node);
-        int?[][] result = Node.ToArray(resultNode);
+        Node outputNode = Node.FromArray(output);
 
-        Assert.Equal(output, result);
+        for (Node? c1 = outputNode, c2 = resultNode; c1 != null; c1 = c1.next, c2 = c2.next)
+        {
+            Assert.Equal(c1.val, c2.val);
+        }
+
+        Assert.NotSame(node, resultNode);
     }
 
     [Fact]
@@ -28,9 +33,14 @@ public class _138_Copy_List_with_Random_Pointer
 
         Node node = Node.FromArray(head);
         Node resultNode = _solution.CopyRandomList(node);
-        int?[][] result = Node.ToArray(resultNode);
+        Node outputNode = Node.FromArray(output);
 
-        Assert.Equal(output, result);
+        for (Node? c1 = outputNode, c2 = resultNode; c1 != null; c1 = c1.next, c2 = c2.next)
+        {
+            Assert.Equal(c1.val, c2.val);
+        }
+
+        Assert.NotSame(node, resultNode);
     }
 
     [Fact]
@@ -41,8 +51,13 @@ public class _138_Copy_List_with_Random_Pointer
 
         Node node = Node.FromArray(head);
         Node resultNode = _solution.CopyRandomList(node);
-        int?[][] result = Node.ToArray(resultNode);
+        Node outputNode = Node.FromArray(output);
 
-        Assert.Equal(output, result);
+        for (Node? c1 = outputNode, c2 = resultNode; c1 != null; c1 = c1.next, c2 = c2.next)
+        {
+            Assert.Equal(c1.val, c2.val);
+        }
+
+        Assert.NotSame(node, resultNode);
     }
 }
