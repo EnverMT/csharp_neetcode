@@ -20,6 +20,7 @@ public class _138_Copy_List_with_Random_Pointer
         for (Node? c1 = outputNode, c2 = resultNode; c1 != null; c1 = c1.next, c2 = c2.next)
         {
             Assert.Equal(c1.val, c2.val);
+            Assert.Equal(c1.random?.val, c2.random?.val);
         }
 
         Assert.NotSame(node, resultNode);
@@ -38,6 +39,7 @@ public class _138_Copy_List_with_Random_Pointer
         for (Node? c1 = outputNode, c2 = resultNode; c1 != null; c1 = c1.next, c2 = c2.next)
         {
             Assert.Equal(c1.val, c2.val);
+            Assert.Equal(c1.random?.val, c2.random?.val);
         }
 
         Assert.NotSame(node, resultNode);
@@ -56,6 +58,7 @@ public class _138_Copy_List_with_Random_Pointer
         for (Node? c1 = outputNode, c2 = resultNode; c1 != null; c1 = c1.next, c2 = c2.next)
         {
             Assert.Equal(c1.val, c2.val);
+            Assert.Equal(c1.random?.val, c2.random?.val);
         }
 
         Assert.NotSame(node, resultNode);
