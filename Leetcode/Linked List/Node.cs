@@ -24,8 +24,8 @@ public class Node
         for (int i = 1; i < array.Length; i++)
         {
             current.next = new Node((int)array[i][0]!);
-            current.index = i;
             current = current.next;
+            current.index = i;
             nodes.Add(current);
         }
 
