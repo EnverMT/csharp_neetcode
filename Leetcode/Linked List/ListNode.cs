@@ -18,6 +18,16 @@ public class ListNode(int val = 0, ListNode? next = null)
         return head;
     }
 
+    public static ListNode[] FromArray(int[][] arrays)
+    {
+        List<ListNode> listArray = new List<ListNode>();
+
+        foreach (int[] array in arrays)
+            listArray.Add(FromArray(array));
+
+        return listArray.ToArray();
+    }
+
     public static int[] ToArray(ListNode head)
     {
         List<int> list = [];
