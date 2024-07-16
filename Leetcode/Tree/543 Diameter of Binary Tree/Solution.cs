@@ -14,7 +14,7 @@ public class Solution
 
     private int Depth(TreeNode? node)
     {
-        if (node == null)
+        if (node?.val == null)
             return -1;
 
         int left = Depth(node.left);
