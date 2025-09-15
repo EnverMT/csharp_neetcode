@@ -1,4 +1,5 @@
 ﻿namespace Leetcode.Linked_List._21_Merge_two_sorter_lists;
+
 public class Solution
 {
     private readonly ListNode head = new();

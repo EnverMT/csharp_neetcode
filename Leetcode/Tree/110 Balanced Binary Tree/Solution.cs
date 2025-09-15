@@ -1,6 +1,4 @@
-﻿using Leetcode.Linked_List;
-
-namespace Leetcode.Tree._110_Balanced_Binary_Tree;
+﻿namespace Leetcode.Tree._110_Balanced_Binary_Tree;
 
 public class Solution
 {
